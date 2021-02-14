@@ -55,11 +55,47 @@ public class Report {
     @Column(name = "content", nullable = false)
     private String content;
 
+    @Lob
+    @Column(name = "business", nullable = true)
+    private String business;
+
+    @Column(name = "commuting", nullable = false)
+    private String commuting;
+
+    @Column(name = "go_home", nullable = false)
+    private String go_home;
+
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
+
+    public String getBusiness() {
+        return business;
+    }
+
+    public void setBusiness(String business) {
+        this.business = business;
+    }
+
+    public String getCommuting() {
+        return commuting;
+    }
+
+    public void setCommuting(String commuting) {
+        this.commuting = commuting;
+    }
+
+    public String getgo_home() {
+        return go_home;
+    }
+
+    public void setLeave(String go_home) {
+        this.go_home = go_home;
+    }
+
+
 
     public Integer getId() {
         return id;

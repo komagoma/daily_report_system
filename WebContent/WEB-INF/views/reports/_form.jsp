@@ -22,8 +22,20 @@
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
 
+<label for="commuting">出勤時間</label><br />
+<input type="time" name="commuting" value="${report.commuting}" />
+<br /><br />
+
 <label for="content">内容</label><br />
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
+<br /><br />
+
+<label for="business">商談状況</label><br />
+<textarea name="business" rows="10" cols="50">${report.business}</textarea>
+<br /><br />
+
+<label for="go_home">退勤時間</label><br />
+<input type="time" name="go_home" value="${report.go_home}" />
 <br /><br />
 
 <input type="hidden" name="_token" value="${_token}" />
